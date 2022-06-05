@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Start | Built</title>
+    <!-- Meta -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Built is a JavaScript framework that has a JavaScript function, but with more features"
+    />
+    <meta name="author" content="Marwan Zayed" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- FontAwesome JS -->
+    <script defer src="assets/fontawesome/js/all.js"></script>
+    <!-- Global CSS -->
+    <link
+      rel="stylesheet"
+      href="assets/plugins/bootstrap/css/bootstrap.min.css"
+    />
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="assets/plugins/prism/prism.css" />
+    <link rel="stylesheet" href="assets/plugins/elegant_font/css/style.css" />
+
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+
+  <body class="body-green">
+    <div class="page-wrapper">
+      <!-- ******Header****** -->
+      <header id="header" class="header">
+        <div class="container">
+          <div class="branding">
+            <h1 class="logo">
+              <a href="index.html">
+                <span aria-hidden="true" class="icon_documents_alt icon"></span>
+                <span class="text-highlight">Built</span
+                ><span class="text-bold">Docs</span>
+              </a>
+            </h1>
+          </div>
+          <!--//branding-->
+
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active">Quick Start</li>
+          </ol>
+        </div>
+        <!--//container-->
+      </header>
+      <!--//header-->
+      <div class="doc-wrapper">
+        <div class="container">
+          <div id="doc-header" class="doc-header text-center">
+            <h1 class="doc-title">
+              <i class="icon fa fa-paper-plane"></i> Quick Start
+            </h1>
+          </div>
+          <!--//doc-header-->
+          <div class="doc-body row">
+            <div class="doc-content col-md-9 col-12 order-1">
+              <div class="content-inner">
+                <section id="download-section" class="doc-section">
+                  <h2 class="section-title">Download</h2>
+                  <div class="section-block">
+                    <p>Download Source Code.</p>
+                    <a
+                      href="https://github.com/marwanzayed-coder/built-framework/archive/refs/heads/main.zip"
+                      class="btn btn-green"
+                      target="_blank"
+                      ><i class="fas fa-download"></i> Download Source Code</a
+                    >
+                  </div>
+                </section>
+                <!--//doc-section-->
+                <section id="installation-section" class="doc-section">
+                  <h2 class="section-title">Installation</h2>
+                  <div id="step1" class="section-block">
+                    <h3 class="block-title">Step One</h3>
+                    <p>
+                      Download
+                      <a href="https://nodejs.org/en/" target="_blank"
+                        >Node.js</a
+                      >
+                    </p>
+                    <!--//code-block-->
+                  </div>
+                  <!--//section-block-->
+                  <div id="step2" class="section-block">
+                    <h3 class="block-title">Step Two</h3>
+                    <p>Download The Package By npm</p>
+                    <div class="code-block">
+                      <p><code>npm i built-function --save</code></p>
+                    </div>
+                  </div>
+                </section>
+                <!--//doc-section-->
+
+                <section id="usage" class="doc-section">
+                  <h2 class="section-title">Usage</h2>
+                  <div id="javascript" class="section-block">
+                    <div class="code-block">
+                      <h6>In Javascript File</h6>
+                      <pre><code class="language-javascript">
+import { push } from "built-javascript";
+
+let array = [1, 2, 3];
+push(array, 4, 5, 6); // [1, 2, 3, 4, 5, 6]
+                      </code>
+                    </pre>
+                    </div>
+                    <!--//code-block-->
+                  </div>
+                  <!--//section-block-->
+                </section>
+                <!--//doc-section-->
+                <section id="function" class="doc-section">
+                  <h2 class="section-title">Functions</h2>
+
+                  <div class="section-block">
+                    <div id="push" class="section-block">
+                      <div class="code-block">
+                        <h6>Push Function</h6>
+                        <pre><code class="language-javascript">
+import { push } from "built-javascript";
+
+/*
+  ==============
+  ==== Push ====
+  ==============
+  push(array, ele);
+*/
+
+let array = [1, 2, 3];
+push(array, 4, 5, 6); // [1, 2, 3, 4, 5, 6]
+                        </code>
+                      </pre>
+                      </div>
+                      <!--//code-block-->
+                    </div>
+
+                    <div id="join" class="section-block">
+                      <div class="code-block">
+                        <h6>Join Function</h6>
+                        <pre><code class="language-javascript">
+import { join } from "built-javascript";
+
+/*
+  ==============
+  ==== Join ====
+  ==============
+  join(array, splitter);
+*/
+
+let array = [1, 2, 3];
+join(array, " "); // 1 2 3
+
+join(array); // 123
+                        </code>
+                      </pre>
+                      </div>
+                      <!--//code-block-->
+                    </div>
+
+                    <div id="length" class="section-block">
+                      <div class="code-block">
+                        <h6>Length Function</h6>
+                        <pre><code class="language-javascript">
+import { length } from "built-javascript";
+
+/*
+  ================
+  ==== Length ====
+  ================
+  length(element);
+    - The element can be string or array
+*/
+
+let array = [1, 2, 3];
+length(array); // 3
+
+let name = "marwan"
+length(name); // 6
+                        </code>
+                      </pre>
+                      </div>
+                      <!--//code-block-->
+                    </div>
+
+                    <div id="reverse" class="section-block">
+                      <div class="code-block">
+                        <h6>Reverse Function</h6>
+                        <pre><code class="language-javascript">
+import { reverse } from "built-javascript";
+
+/*
+  =================
+  ==== Reverse ====
+  =================
+  reverse(string);
+*/
+
+let name = "marwan"
+reverse(name); // nawram
+                        </code>
+                      </pre>
+                      </div>
+                      <!--//code-block-->
+                    </div>
+                  </div>
+                </section>
+              </div>
+              <!--//content-inner-->
+            </div>
+            <!--//doc-content-->
+            <div class="doc-sidebar col-md-3 col-12 order-0 d-none d-md-flex">
+              <div id="doc-nav" class="doc-nav">
+                <nav id="doc-menu" class="nav doc-menu flex-column sticky">
+                  <a class="nav-link scrollto" href="#download-section"
+                    >Download</a
+                  >
+                  <a class="nav-link scrollto" href="#installation-section"
+                    >Installation</a
+                  >
+                  <nav class="doc-sub-menu nav flex-column">
+                    <a class="nav-link scrollto" href="#step1">Step One</a>
+                    <a class="nav-link scrollto" href="#step2">Step Two</a>
+                  </nav>
+                  <!--//nav-->
+                  <a class="nav-link scrollto" href="#usage">Usage</a>
+                  <nav class="doc-sub-menu nav flex-column">
+                    <a class="nav-link scrollto" href="#javascript"
+                      >Javascript File</a
+                    >
+                  </nav>
+                  <!--//nav-->
+                  <!--//nav-->
+                  <a class="nav-link scrollto" href="#function">Functions</a>
+                  <nav class="doc-sub-menu nav flex-column">
+                    <a class="nav-link scrollto" href="#push">Push</a>
+                    <a class="nav-link scrollto" href="#join">Join</a>
+                    <a class="nav-link scrollto" href="#length">Length</a>
+                    <a class="nav-link scrollto" href="#reverse">Reverse</a>
+                  </nav>
+                </nav>
+                <!--//doc-menu-->
+              </div>
+            </div>
+            <!--//doc-sidebar-->
+          </div>
+          <!--//doc-body-->
+        </div>
+        <!--//container-->
+      </div>
+      <!--//doc-wrapper-->
+    </div>
+    <!--//page-wrapper-->
+
+    <footer class="footer text-center">
+      <div class="container">
+        <!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
+        <small class="copyright"
+          >Designed with <i class="fas fa-heart"></i> by
+          <a href="https://marwan.gq/" target="_blank">Marwan Zayed</a>
+        </small>
+      </div>
+      <!--//container-->
+    </footer>
+    <!--//footer-->
+
+    <!-- Main Javascript -->
+    <script
+      type="text/javascript"
+      src="assets/plugins/jquery-3.4.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="assets/plugins/bootstrap/js/bootstrap.min.js"
+    ></script>
+    <script type="text/javascript" src="assets/plugins/prism/prism.js"></script>
+    <script
+      type="text/javascript"
+      src="assets/plugins/jquery-scrollTo/jquery.scrollTo.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="assets/plugins/stickyfill/dist/stickyfill.min.js"
+    ></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+  </body>
+</html>
